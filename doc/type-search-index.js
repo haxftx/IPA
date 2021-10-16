@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"tema1","l":"Familie"},{"p":"tema1","l":"Grup"},{"p":"tema1","l":"Heap"},{"p":"tema1","l":"In_Out"},{"p":"tema1","l":"Nod"},{"p":"tema1","l":"Pasageri"},{"p":"tema1","l":"Persoana"},{"p":"tema1","l":"Singur"},{"p":"tema1","l":"VectPasageri"}]

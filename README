@@ -1,0 +1,56 @@
+Imbarcarea pasagerilor in avion utilizand o coada de prioritati
+
+Pentru implementarea temei am folosit 3 clase(Singur, Grup si Familie)
+care extind clasa Pasageri si reprezinta tipul de pasageri din baza de date.
+Clasa Pasageri contine un vector de Persoane si id-l grupului ca varibile a
+instantei iar ca metode:
+*setId - seteaza Id grupului
+*getId - intoarce Id grupului
+*add - adauga o persoana in vector
+*getIndex - returneaza indexul ultimului element din vector
+*isempty - verifica daca exista perosane in vector
+*getfirstName - intoarce numele primei Persoane
+*delPersoana - sterge o persoana din grup dupa numele
+*Prioritate - calculeaza prioritatea grupului
+Clasa VectPasageri contine un vector de Pasageri si are metodele
+*add - caut in VectPasageri daca exista deja grupul respectiv daca nu
+il creeaza(Singur, Grup sau Familie) si adauga noua persoana
+Clasa Persoana reprezinta datele unui persoane, care contine metodele:
+*getNume - care intoarce numele persoanei
+*getPrioritate - care calculeaza prioritatea persoanei respective
+Clasa Nod reprezinta un nod al Arborelui
+Clasa Heap reprezinta max heapul cu datele pasagerilor contine 2 variabile
+root(nodul arborelui) si v(vectorul de pasageri) cu metodele:
+*inaltime - calculeaza inaltimea arborelui
+*findNod - returneaza un nod care are cel putin un copil nenul
+*findlastNod - returneaza ultimul nod adaugat din arbore, care este
+                cel mai din dreapta de pe ultimul nivel
+*finddelNod - returneaza un nod care contine numele pasagerului dat ca parametru
+*read - adauga in vectorul de pasageri o noua persoana
+*getPasager - returneaza un pasager care contine numele ca parametru
+*fcmp - compara daca prioritatea primului este mai mare ca a celuilant
+*swap - interchimba 2 infomatii din 2 noduri
+*frunza - verifica daca nodul este frunza
+*echilibrare - echilibreaza valorile arborelui incepand din nodul dat ca 
+                parametrul parcurgand spre frunze
+*echilibr - echilibrea valorile arborelui incepand de la nod si ridicanduse
+            spre radacina
+*RSD - parcurge arborele in preordine si construind un string din id-uri
+*insert - adauga in arbore un nou grup(Singur, Familie sau Grup) care cauta
+          un nod de pe penultimul nivel fara un/doi copil/i sau pe ultimul nivel
+          daca arborele este complet si daca e frunza adaug in stanga altfel in
+          partea dreapta si apoi echilibreaza arborele
+*delete - sterge un grup(Singur, Familie, Grup) sau o persoana din grup 
+          caut nodul respectiv unde se afla informatia, daca e frunza doar sterge
+          daca e radacina fac embark sau sterg perosana si echilibrez, iar cand
+          nodul se afla in mijloc sterg nodul sau persoana si reechilibrez
+*embark - elimina radagina arborelui, caut ultimul nod adaugat si in pun in root
+          apoi sterg nodul respectiv si echilibrez arborele de la root
+*list - afiseaza id-urile din arbore in preordine
+Clasa In_Out contine metoda main, unde citesc din fisierul queuq.in liniile cu
+datele despre persoane si le adug in vectorul de pasageri din heap apoi citesc
+comenzile si le efectuez.
+
+Am folosit toate variabile intantelor private si fiecare metota folosita doar
+in cadrul unei clase. Am clasele Grup, Familie si Singur pentru implementarea
+polimorfismului.
